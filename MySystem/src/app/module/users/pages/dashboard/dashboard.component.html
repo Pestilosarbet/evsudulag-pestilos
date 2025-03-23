@@ -1,0 +1,25 @@
+<div class="main">
+<div class="dashboard-container">
+    <h1>POS Dashboard</h1>
+    <div class="sales-summary">
+      <div class="card" *ngFor="let item of salesSummary">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.value }}</p>
+      </div>
+    </div>
+    
+    <h2>Products</h2>
+    <ul>
+      <li *ngFor="let product of products">
+        {{ product.name }} - {{ product.price }} (Stock: {{ product.stock }})
+      </li>
+    </ul>
+    
+    <h2>Recent Transactions</h2>
+    <ul>
+      <li *ngFor="let transaction of transactions">
+        {{ transaction.customer }} - {{ transaction.amount }}
+      </li>
+    </ul>
+  </div>
+</div>

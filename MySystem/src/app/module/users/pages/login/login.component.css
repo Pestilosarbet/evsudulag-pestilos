@@ -21,3 +21,7 @@ mat-form-field {
 button {
     margin-bottom: 16px;
 }
+.error {
+    color: red;
+    text-align: center;
+}
